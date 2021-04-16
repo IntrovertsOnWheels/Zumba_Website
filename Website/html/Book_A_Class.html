@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <!--Linking to CSS file-->
 <link href="../css/Book_A_Class.css" rel="stylesheet" type="text/css">
+<script src="../JavaScript/WebFunctions.js"></script>
 <title>Book A Class</title>
 </head>
 <body>
@@ -53,7 +54,7 @@
     <br> <br>
     <!--Creating a textbox for email-->
     <label id="emailID"><b>Email</b></label><br>
-    <input type="email" name="email" required="required" placeholder="e.g myname@example.com" size="25" class="details">
+    <input id="email" type="email" name="email" required="required" placeholder="e.g myname@example.com" size="25" class="details">
     <br> <br>
     <!--Creating a textbox for phone number-->
     <label for="contactno"><b>Contact Number</b></label><br>
@@ -74,7 +75,7 @@
     <label for="comments"><b>Comments</b></label><br>
     <textarea name="Comments" cols="25" rows="10" id="comments">Enter here... </textarea>
     <br> <br>
-    <input type="submit" name="Submit" value="Submit"> 
+    <input type="submit" name="Submit" value="Submit" onclick="StoreData()"> 
     <input type="reset" name="Reset" value="Reset">
     <br> <br>
 </fieldset>
