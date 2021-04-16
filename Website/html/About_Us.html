@@ -1,0 +1,116 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--Linking to CSS file-->
+<link href="../css/About_Us.css" rel="stylesheet" type="text/css">
+<title>About Us</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!--Nav bar links-->
+            <nav class="nav">
+                 <ul class="nav_list">
+                    <li>
+                    <a href="Home.html" class="logo"><img src="../images/logo.png" alt="logo"></a>
+                    </li>
+                     <li class="items">
+                        <a href="Home.html" class="link">Home</a>
+                     </li>
+                     <li class="items">
+                         <a href="Book_A_Class.html" class="link">Book A Class</a>
+                     </li>
+                     <li class="items">
+                         <a href="About_Us.html" class="link" id="active">About Us</a>
+                    </li>
+                    <li class="items">
+                         <a href="Contact_Us.html" class="link">Contact Us</a>
+                    </li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+<h1>Learn more about us!</h1><br>
+    <p id="first_p">Please send us your feedback!</p>
+    <br> <br>
+  <div class="row">
+    <div class="column">
+      <!--Creating a section to display the contact info-->
+      <div class="left">
+        <h2>How to contact us</h2> <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50459.26652559472!2d175.2562890216475!3d-37.7735344866591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d23a61bd5d389%3A0xc7812f0870a433b5!2sHamilton%20Zumba%20with%20Jo!5e0!3m2!1sen!2snz!4v1617227943277!5m2!1sen!2snz" width="450" height="355" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="container_about">
+          <br>
+          <h3>Phone number:</h3>
+          <p>+64 12 3456 789</p>
+          <br>
+          <h3>Fax:</h3>
+          <p>+64 12 3456 789</p>
+          <br>
+          <h3>Email:</h3>
+          <p>introvertsonwheels@gmail.com</p>
+          <br>
+          <h3>Social Media Platforms</h3>
+          <a href="https://www.facebook.com"><img src="../images/facebook_logo.png" height="25" width="25" alt="facebook"></a>
+          <!--Image Source: https://www.flaticon.com/free-icon/facebook_124010-->
+          <a href="https://www.instagram.com"><img src="../images/instagram_logo.png" height="25" width="25" alt="instagram"></a>
+          <!--Image Source: https://en.wikipedia.org/wiki/File:Instagram_logo_2016.svg-->
+          <br> <br>
+          <div class="button"><a href="mailto:introvertsonwheels@gmail.com">Email us</a></div>
+        </div>
+      </div>
+    </div>
+  <!--Creating a section to display the history section-->
+    <div class="column">
+      <div class="center"> <!--was center-->
+        <h2>Our History</h2>
+        <br>
+        <img src="../images/zumba.png" alt="Zumba" style="width:100%" height="342" width="200">
+        <!--Image Source: https://www.pinterest.nz/pin/463518986618946906/-->
+        <div class="container">
+          <br>
+          <p>Zumba was created by the choreographer and fitness instructor Alberto “Beto” Perez in the mid-1990s.</p><p>
+            After forgetting his music for aerobics class, he improvised using the salsa and merengue tapes he </p><p>
+            had on him. Instead of strict rep-counting, the improvised class was the perfect mix of dance and </p><p>
+            aerobics that kept the class fun.</p><p>
+
+            Zumba was designed to be low-impact to suit people of all ages and from different fitness levels, but </p><p>
+            it is also an intense and effective calorie-burning workout. Zumba’s philosophy is to help anyone reach </p><p>
+            their fitness goals in a supportive environment while having as much fun as possible.</p> <br>
+            <!--(Text source: https://womensfitnessclubs.com/blog/a-short-history-of-zumba/)-->
+          <div class="button"><a href="https://womensfitnessclubs.com/blog/a-short-history-of-zumba/">Read More</a></div>
+        </div>
+      </div>
+    </div>
+  <!--Creating a section to display the feedback form-->
+    <div class="column">
+      <div class="right">
+        <div class="container">
+          <form class="feedbackform">
+            <h2>Feedback</h2>
+            <br>
+              <label for="feedbackfname"><b>First Name</b></label><br>
+              <input type="text" name="firstname" id="feedbackfname" maxlength="15" placeholder="e.g John" size="25"><br>
+              <label for="feedbacklname"><b>Last Name</b></label><br>
+              <input type="text" name="lastname" id="feedbacklname" maxlength="15" placeholder="e.g Smith" size="25">
+              <br> 
+              <label for="feedbackemail"><b>Email</b></label><br>
+              <input type="email" name="email" id="feedbackemail" placeholder="e.g myname@example.com" size="25"> 
+              <br> 
+              <label for="number"><b>Contact Number</b></label><br>
+              <input type="text" name="contactno" id="number" maxlength="11" size="25" placeholder="e.g (+64)123456789">
+              <br>
+              <label for="feedback"><b>Feedback</b></label><br>
+              <textarea name="Feedback" cols="42" rows="12" id="feedback">Enter here... </textarea>
+              <br>
+              <input type="submit" name="Submit" value="Submit"> 
+              <br>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer class="footer">Copyright &#169; Introverts on Wheels</footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--Linking to CSS file-->
+<link href="../css/Book_A_Class.css" rel="stylesheet" type="text/css">
+<title>Book A Class</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!--Nav bar links-->
+            <nav class="nav">
+                 <ul class="nav_list">
+                    <li>
+                    <a href="Home.html" class="logo"><img src="../images/logo.png" alt="logo"></a>
+                    </li>
+                     <li class="items">
+                        <a href="Home.html" class="link">Home</a>
+                     </li>
+                     <li class="items">
+                         <a href="Book_A_Class.html" class="link" id="active">Book A Class</a>
+                     </li>
+                     <li class="items">
+                         <a href="About_Us.html" class="link">About Us</a>
+                    </li>
+                    <li class="items">
+                         <a href="Contact_Us.html" class="link">Contact Us</a>
+                    </li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Book a class with us, at your own convenience!</h1><br>
+<div class="booking_div">
+<form class="bookingform" id="bookingform">
+<fieldset>
+    <legend><b>Finalise Details</b></legend><br>
+    <!--Creating a dropdown list for Title-->
+    <label for="titledropdown"><b>Title</b></label><br>
+    <select name="title" required="required" id="titledropdown">
+    <option label="Choose an option" selected="selected">  </option>
+    <option value="Mr"> Mr </option>
+    <option value="Mrs"> Mrs </option>
+    <option value="Miss"> Ms </option>
+    </select><br><br>
+    <!--Creating a textbox for fname and lname-->
+    <label for="fname"><b>First Name</b></label><br>
+    <input type="text" id="fname" name="firstname" maxlength="15" required="required" placeholder="e.g John" size="25" class="details">
+    <br><br>
+    <label for="lname"><b>Last Name</b></label><br>
+    <input type="text" id="lname" name="lastname" maxlength="15" required="required" placeholder="e.g Smith" size="25" class="details">
+    <br> <br>
+    <!--Creating a textbox for email-->
+    <label id="emailID"><b>Email</b></label><br>
+    <input type="email" name="email" required="required" placeholder="e.g myname@example.com" size="25" class="details">
+    <br> <br>
+    <!--Creating a textbox for phone number-->
+    <label for="contactno"><b>Contact Number</b></label><br>
+    <input type="text" id="contactno" name="contactno" maxlength="11" required="required" size="25" placeholder="e.g (+64)123456789" class="details">
+    <br> <br>
+    <!--Creating a dropdown list for Membership Type-->
+    <label for="membership"><b>Membership Type</b></label><br>
+    <select name="membership" required="required" id="membership">
+    <option label="Choose an option" selected="selected">  </option>
+    <option id="not_a_member"> Not a Member </option>
+    <option id="casual"> Casual Concession </option>
+    <option id="fixed"> Fixed Concession </option>
+    </select> <br> <br>
+    <!--Calendar input type-->
+    <label for="arrivaldate"><b>Choose Date</b></label><br>
+    <input type="date" id="arrivaldate" name="start_date" required="required"><br>
+    <br>
+    <label for="comments"><b>Comments</b></label><br>
+    <textarea name="Comments" cols="25" rows="10" id="comments">Enter here... </textarea>
+    <br> <br>
+    <input type="submit" name="Submit" value="Submit"> 
+    <input type="reset" name="Reset" value="Reset">
+    <br> <br>
+</fieldset>
+</form>
+</div>
+<footer class="footer">Copyright &#169; Introverts on Wheels</footer>
+</body>
+</html>
